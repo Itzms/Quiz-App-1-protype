@@ -6,6 +6,7 @@ body {
 .content{
     display:flex;
     flex-direction:column;
+    flex-grow:3;
     overflow-y:none;
     align-content: center;
     justify-content: center;
