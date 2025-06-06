@@ -1,22 +1,121 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <title>Quiz Demox</title>
-    	   	<link rel="stylesheet" href = "style.css">
-    	   	<script src = "script.js" defer></script>
+        <link type="text/css" rel = "stylesheet" href="style.css">
     </head>
-  
+    
+    
     <body>
     <div class = "menu-slide">
-        <div class ="menu">
-            <h2 onclick = "menuTog()">hi</h2>
-        </div>
-    </div>
+        <div class = "menu-active">
+         <div class ="menu">
+           
+            <div id = "logo">
+               <div class="title-img">
+                 
+               </div>
+               <h3 class = "title">ＴＹＴＯ</h3>  
+               <h2 align="right"onclick ="menuTog()">×</h2>
+            </div>
+            <div class = "search-bar">
+              <input type="text" id = "menu-search"
+                     placeholder="Search🔍"
+                     aria-label="Menu Search"
+                     aria-live = "polite">
+            </div>
+            <hr style="width:90%;">
+            <nav >
+              <div class = "menu-space" id = "homeItem">
+                <div class = "menu-row" >
+                 <p class = "signs">⌂</p>
+                 <a class ="menu-option">Home</a> 
+                 <p class = 
+                    "caret"onclick="drop('homeItem',0)">〉</p>
+                </div>
+                <div class = "sub-menu">
+                  <a class = "menu-row">Quick Quiz </a>
+                  <a class = "menu-row">Quiz Categories</a>
+                  <a class = "menu-row">Custom Quiz</a>
+                  <a class ="menu-row">Practice</a>
+                </div>
+              </div>
+             
+              <div class = "menu-space" id = "dashItem">
+                 <div class = "menu-row">
+                   <p class = "signs">▧</p>
+                   <a class ="menu-option">Dashboard</a>
+                   <p class = "caret" onclick = 
+                       "drop('dashItem', 1)">〉</p>
+                 </div>
+                 <div class = "sub-menu">
+                  <a class = "menu-row">Achivements</a>
+                  <a class = "menu-row">Leader Board</a>
+                  <a class = "menu-row">Challenge</a>
+                  <a class ="menu-row">History</a>
+                </div>
+              </div>
+              <div class = "menu-row">
+                <p class = "signs">+</p>
+                <a class ="menu-option" >Community</a>
+                <p class = "caret">〉</p>
+              </div>
+              <div class = "menu-space" id ="appearanceItem">
+                <div class = "menu-row">
+                  <p class = "signs">▦</p>
+                  <a class ="menu-option">Appearance</a>
+                  <p class = "caret" 
+                   onclick="drop('appearanceItem',3)">〉</p>
+                </div>
+                <div class = "sub-menu">
+                  <a class = "menu-row">Theme</a>
+                  <a class = "menu-row">Mode</a>
+                  <a class = "menu-row">Font</a>
+                </div>
+              </div>
+              <div class = "menu-space" id="settingsItem">
+                <div class = "menu-row">
+                  <p class = "caret">⚙</p>
+                  <a class ="menu-option">Settings</a>
+                  <p class = "caret" 
+                    onclick="drop('settingsItem',4)">〉</p>
+                </div>
+                <div class = "sub-menu">
+                  <a class = "menu-row">Account</a>
+                  <a class = "menu-row">Language</a>
+                </div>
+              </div>
+              <div class = "menu-row">
+                <p class = "signs">[?]</p>
+                <a class ="menu-option"> FAQs </a>
+                <p class = "caret">〉</p>
+              </div>
+              <div class = "menu-row">
+                <p class = "signs" >✉</p>
+                <a class ="menu-option">Feedbacks</a>
+                <p class = "caret">〉</p>
+              </div>
+            </nav> 
+            <hr style="width:90%;">
+            <div class = "profile-link">
+              
+            </div>
+             <div id = "logo">
+               <div class="title-img">
+                 
+               </div>
+               <h3 class = "title">ＴＹＴＯ</h3>  
+               <h2 align="right">×</h2>
+            </div>
+          </div>
+        
+         </div>
+         </div>
     <div class ="content">
     <header>
         <div id = "logo">
             <div class="title-img">
-                <img  src="  https://i.postimg.cc/tgz537FK/IMG-20250219-190502.jpg">
+                 
             </div>
             <h3 class = "title">Welcome To ＴＹＴＯ</h3>  
         </div>
@@ -32,8 +131,14 @@
         <div class = "card">
              <p class = "main-label">Check Out More Categories</p>
         </div>
+        
+        
         <div class = "x-list">
-            <div class = "card" id="info1" >
+          <div class = "side-store button1" id = "c2"> <
+          </div>
+          
+          <div class = "x-list-track">
+            <div class = "card active" id="info1" >
                 <div class = "info">
                     <p> Enter The Realm Where Intellect Reigns And Curiosity Is Your Compass. <br /><br />
                     
@@ -45,8 +150,68 @@ Ready Your Wit. Trust Your Instincts. And Remember: Brilliance Favors The Bold. 
                 </div>
             </div>
             
+            <div class = "card" id="info2" >
+                <div class = "info">
+                    <p> Step Into A Refined Challenge Of The Biological Arts. <br /> <br /> Where Cells Whisper Secrets, Genes Trace Noble Lineages, And Ecosystems Reveal Their Grand Design.
+                 <br /> <br />    A Quiz For Those With A Curious Mind And A Taste For The Extraordinary. 
+                 <br />Ready To Prove Your Pedigree In Biology? <br /> <br> <p class = "button1">Biology Quiz</p>
+                    </p>
+                
+                </div>
+            </div>
+          </div>
+          
+          <div class = "side-store button1" id = "c1"> >
+          </div>
+        </div>
+        <div class = "card">
+            <p class = "main-label"> Do You Want To Try Something New </p>
+            <p class = "button1">Craft Out Your Owm Quiz</p>
         </div>
     </main>
+    <footer>
+        <div class = "footer-top">    
+                <h3 class = "title">ＴＹＴＯ</h3>  
+        </div>
+        <div class = "footer-mid">
+            <div class ="info-list">
+                <p class="main-label" >
+                    About Us
+                </p>
+                <a>Author</a>
+                <a>Vision</a>
+                <a>Built Note</a>
+                <a>Version: 1</a>
+            </div>
+            <div class ="info-list">
+                <p class="main-label">
+                    Contact
+                </p>
+                <a>Email</a>
+                <a>Github</a>
+                <a>EddieHub</a>
+                <a>Portfolio</a>
+                <a>Join Us</a>
+            </div>
+            <div class ="info-list">
+                <p class="main-label">
+                    Feedback
+                </p>
+                <a>At Github</a>
+                <a>On Email</a>
+            </div>
+            
+            <div class = "icon-list">
+                <p class="main-label">Follow Us On</p>
+                <a class = "icons"><img src= "https://i.ibb.co/TDM3M2nZ/25-1.png" > Youtube</a>
+              <a class = "icons"><img src= "https://i.ibb.co/v4JhKJ5D/1200px-Instagram-logo-2022-svg.png" > Instagram</a>
+              <a class = "icons"><img src= "https://i.ibb.co/n8BwMjkc/X-logo.jpg" > X (Twitter)</a>
+            </div>
+        </div>
+        <div class = "footer-end"> <p>© 2025 MS7
+         Project by Md Suhail. All rights reserved.</p>
+         </div>
+    </footer>
     </div>
     </body>
 </html>
