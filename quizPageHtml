@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Page</title>
+        <!-- Its a seperate page interface and it contains how  
+        a quiz should look and behave-->
+    </head>
+    <body> 
+      <div class ="content" id ="gk">
+        <header>
+          <div id = "logo">
+            <div class="title-img">
+                 
+            </div>
+            <h3 class = "title">Profile </h3>  
+          </div>
+          <div class = "menu-open">
+           <p onclick = "menuTog()">⧉ Menu</p>
+          </div>
+        </header>
+      
+        <div class = "quiz-intro">
+          <div class = "quiz-image">
+              
+             <img src = "https://i.ibb.co/203xFC6y/file-0000000019a8622fa3c1065dd555d588.png">
+          </div>
+          <div class = "card">
+            <p>Explore the World of Knowledge
+            <br /> <br />
+A journey through facts, logic, discovery, and wisdom — where every question reveals a new perspective. <br /> Sharpen your mind, challenge your curiosity, and unlock the power of learning through timeless knowledge.</p>
+             <br />
+             <br />
+             <br />
+             <p class ="button1" onclick="quizPage('gk', 'gkQuiz')">Start</p>
+          </div>
+        </div>
+      </div>
+      <div class = "quiz" id ="gkQuiz">
+        
+        <div class = "head-part">
+              <p onclick="act('gkQuiz', 'gk', 2)">X</p>
+              <p style="text-align:center;">question counter</p>
+             <!-- <p>next</p>-->
+        </div>
+        <div id="q1">
+          <div class = "question-frame">
+              <div class = "timer">
+                  
+              </div>
+              <div class = "question">
+                  <h3>question 1. <br />
+                      here questions will be placed and the above circle represnts a timer, which will be dynamically added
+                  </h3>
+              </div>
+          </div>
+          <div class = "options">
+            <p class="option-card" id="o1">Option1</p>
+            <p class="option-card" id="o2">Option2</p>
+            <p class="option-card" id="o3">Option3</p>
+            <p class="option-card" id="o4">Option4</p>
+          </div>
+          <div class ="foot-part">
+              <p class="button1" id="prev">Previous</p>
+              <p class="button1" id="next">Next</p>
+          </div>
+        </div>
+        <div class="alert-overlay">
+            <div class="alert card">
+                <p>Are You Sure, Want To Exit</p>
+                <div class="button-pair">
+                  <p class="button1" onclick="act('gkQuiz', 'gk', 1)"> Yes</p>
+                  <p class="button1" onclick="act('gk', 'gkQuiz',0)"> No </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </body>
+</html>
